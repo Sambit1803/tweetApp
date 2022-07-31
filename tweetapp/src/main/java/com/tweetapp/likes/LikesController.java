@@ -24,7 +24,6 @@ public class LikesController {
 	public Likes getLikeCount(@PathVariable long id) {
 		
 		Likes l = likesService.getLikesCount(id);
-		System.out.print(l);
 		return l;
 		
 	}
@@ -37,8 +36,6 @@ public class LikesController {
 	@PutMapping("/tweet/{id}/likesUpdate/{loginId}")
 	public ResponseEntity<Likes> updateLikes(@PathVariable long id,@PathVariable String loginId, @RequestBody Likes likes) {
 		Likes updatedLikes = likesService.updateLikes(id, loginId, likes);
-		
-		System.out.print("After:"+updatedLikes);
 		
 		
 		return new ResponseEntity<Likes>(updatedLikes, HttpStatus.OK);

@@ -33,5 +33,18 @@ public class UserService {
 	public List<Users> searchByRegex(String str){
 		return userRepository.searchByRegex(str);
 	}
+	
+	public boolean authenticate(String loginId, String password) {
+		Users user = userRepository.findByloginId(loginId);
+		
+		if(user==null)
+			return false;
+		
+		if(user.getPassword().equals(password)){
+			return true;
+		}
+		else
+			return false;
+	}
 
 }

@@ -24,11 +24,14 @@ public class UserController {
 	
 	@PostMapping("/tweets/register")
 	public ResponseEntity<Void> register(@RequestBody Users user) {
+		
 		Users createdUser = userService.register(user);
 		
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{loginId}").buildAndExpand(createdUser.getLoginId()).toUri();
 		
 		return ResponseEntity.created(uri).build();
+		
+		
 	}
 	
 	@GetMapping("/tweets/users/all")
@@ -50,6 +53,11 @@ public class UserController {
 	public ResponseEntity<Users> updatePassword(@PathVariable String loginId, @RequestBody Users user){
 		Users u = userService.updatePassword(loginId, user);
 		return new ResponseEntity<Users>(u, HttpStatus.OK);
+	}
+	
+	@GetMapping("/authenticate/{loginId}/{password}")
+	public boolean authencticate(@PathVariable String loginId,@PathVariable String password) {
+		return userService.authenticate(loginId, password);
 	}
 
 }

@@ -4,6 +4,9 @@ For Spring Boot Code, navigate to [tweetApp-Spring Boot](https://github.com/Samb
 
 For Angular Code, navigate to [tweetApp-Angular](https://github.com/Sambit1803/tweetApp-Frontend).
 
+## Description :
+The TweetApp is a SPA(Single Page App) that allows registered users to post new tweets, reply to tweets, like/unlike tweets. Registered user can also delete and update their own tweets. In addition, user can view other user's profile.
+
 ## Features included :
   
   - User Related :-
@@ -17,15 +20,26 @@ For Angular Code, navigate to [tweetApp-Angular](https://github.com/Sambit1803/t
     - Comment on tweets
     - Like Tweet
   - Other :-
-    - Show all users
-    - Show all tweets
-    - Show users profile
-    - Show specific users (by searching username)
+    - User can see list of all users
+    - User can see all tweets
+    - User can see other user's profile
+    - User can search specific users
    
 ## Technologies :
+ 
+#### Backend
+1. Java
+1. Spring Boot
+1. MongoRepository
+1. Rest API
+1. JUnit
   
-  - Spring Boot
-  - Angular
-  - TypeScript
-  - MongoDB
-  - Rest API
+#### Frontend
+1. Angular
+1. Typescript
+1. HTML
+1. CSS
+1. Bootstrap
+  
+#### Database Management
+1. MongoDB

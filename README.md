@@ -9,21 +9,21 @@ The TweetApp is a SPA(Single Page App) that allows registered users to post new 
 
 ## Features included :
   
-  - User Related :-
-    - Login
-    - Register
-    - Forgot password
-  - Tweet Related :-
-    - Post Tweet
-    - Delete Tweet
-    - Update Tweet
-    - Comment on tweets
-    - Like Tweet
-  - Other :-
-    - User can see list of all users
-    - User can see all tweets
-    - User can see other user's profile
-    - User can search specific users
+#### User Related :-
+1. Login
+1. Register
+1. Forgot password
+#### Tweet Related :-
+1. Post Tweet
+1. Delete Tweet
+1. Update Tweet
+1. Comment on tweets
+1. Like Tweet
+#### Other :-
+1. User can see list of all users
+1. User can see all tweets
+1. User can see other user's profile
+1. User can search specific users
    
 ## Technologies :
  

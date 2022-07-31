@@ -20,15 +20,4 @@ public class CommentsService {
 		return commentsRepository.save(comments);
 	}
 	
-//	public void deleteComments(long tweetId){
-//		
-//		List<Comments> c = commentsRepository.getAllBytweetId(tweetId);
-//		
-//		System.out.print(c);
-//		
-//		for(int i=0;i<c.size();i++) {
-//			commentsRepository.delete(c.get(i));
-//		}
-//	}
-
 }
